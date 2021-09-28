@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ejemplo" />
+		<Option makefile="C:/SGDK-master/makefile.gen" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="segagenesiscompiler" />
+		<Build>
+			<Target title="default">
+				<Option output="out/ejemplo" prefix_auto="1" extension_auto="1" />
+				<Option object_output="out/" />
+				<Option type="1" />
+				<Option compiler="segagenesiscompiler" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-w" />
+		</Compiler>
+		<Unit filename="res/resources.res" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
