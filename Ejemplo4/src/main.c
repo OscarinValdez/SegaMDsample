@@ -180,16 +180,18 @@ int main(u16 hard)
     bga = MAP_create(&bga_map, BG_A, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[0]));//Agregar primer fondo
     bgb = MAP_create(&bgb_map, BG_B, TILE_ATTR_FULL(0, FALSE, FALSE, FALSE, bgBaseTileIndex[1]));//Agregar segundo fondo
 
-    MAP_scrollTo(bga, 0, 0);
-    MAP_scrollTo(bgb, 0, 0);
+    MAP_scrollTo(bga, 0, 0);//Colocar primer fondo en las posiciones indicadas
+    MAP_scrollTo(bgb, 0, 0);//Colocar segundo fondo en las posiciones indicadas
 
+    //Esto ya es lo que se va a ejecutar todo el tiempo
     while (1)
     {
+	//Llamar a los procediientos
         moverJugador();
         desplazarPantalla();
 
         SPR_update();
-        SYS_doVBlankProcess();
+        SYS_doVBlankProcess();//Limpiar graficos no necesarios para el siguiente fotograma
     }
 
     MEM_free(bga);
