@@ -1,6 +1,8 @@
 #include <genesis.h>
 #include <resources.h>
 
+//Datos del nivel en cuadricula de 16x16 pixeles
+//1=Bloque solido   0=Nada
 const short nivel1_map[14][40] = {
 { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
